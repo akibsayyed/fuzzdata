@@ -1,0 +1,3 @@
+k=<method>
+k=<method>:<encryption key>
+k=<method>
