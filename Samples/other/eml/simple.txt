@@ -1,9 +1,0 @@
-From: <adam@example.org>
-To: <eva@example.org>
-Subject: Umlaute dank MIME
-MIME-Version: 1.0
-Content-type: text/plain; charset=iso-8859-15; abcd=mytest
-Content-Transfer-Encoding: 8bit
-
-Wären die drei zusätzlichen Kopfzeilen nicht, würde diese Zeile nicht leserlich sein.
-

@@ -1,1 +1,0 @@
-o=Cisco-SIPUA 27816 0 IN IP4 0.0.0.0

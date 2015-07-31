@@ -1,9 +1,0 @@
-a=candidate:1 1 UDP 2130706431 10.0.1.1 9000 typ host
-a=candidate:2 1 UDP 1694498815 192.0.2.3 45666 typ srflx raddr 10.0.1.1 rport 8998
-a=ptime:20
-a=ssrc:<ssrc-id> <attribute>
-a=ssrc:<ssrc-id> cname:<cname>
-a=ssrc:<ssrc-id> previous-ssrc:100 200 300 400
-a=ssrc:<ssrc-id> fmtp:100 AAA
-a=ssrc-group:FID 11111 22222
-a=ssrc:<ssrc-id> <attribute>:<value>

@@ -1,48 +1,0 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <title>testcase</title>
-    <script id="fshader" type="x-shader/x-fragment">
-        void main() { gl_FragColor = vec4(0.5, 0.5, 1, 1); }
-    </script>
-    <script id="vshader" type="x-shader/x-vertex">
-        attribute vec3 pos;
-        void main(void) { gl_Position = vec4(pos, 2); }
-    </script>
-    
-    <script type="text/javascript">
-        function boom() {
-            var webgl = initWebGL("canvas", document.getElementById("vshader").text,
-                                            document.getElementById("fshader").text);
-           gl = webgl.gl;
-           pg = webgl.program;
-
-try {gl.hint(gl.GENERATE_MIPMAP_HINT,gl.DONT_CARE)} catch(e) {}try {var v0 = gl.createFramebuffer();} catch(e) {}try {gl.bindFramebuffer(gl.FRAMEBUFFER,v0)} catch(e) {}try {gl.depthFunc(gl.GEQUAL)} catch(e) {}try {gl.scissor(gl.getParameter(gl.SCISSOR_BOX)[0], gl.getParameter(gl.SCISSOR_BOX)[1], gl.getParameter(gl.SCISSOR_BOX)[2], gl.getParameter(gl.SCISSOR_BOX)[3])} catch(e) {}try {gl.renderbufferStorage(gl.RENDERBUFFER,gl.DEPTH_COMPONENT16,0.4,0)} catch(e) {}try {gl.clearColor(32768,0,0,0)} catch(e) {}try {var v1 = gl.createRenderbuffer();} catch(e) {}try {gl.framebufferRenderbuffer(gl.FRAMEBUFFER,gl.DEPTH_ATTACHMENT,36161,v1)} catch(e) {}
-try {gl.finish()} catch(e) {}try {gl.stencilMask(1)} catch(e) {}try {var v2 = new ArrayBuffer(2147483647);} catch(e) {}try {gl.texImage2D(gl.TEXTURE_CUBE_MAP_NEGATIVE_Z,0,gl.LUMINANCE,128,2147483647,0,gl.RGB,gl.UNSIGNED_BYTE,v2)} catch(e) {}try {gl.copyTexImage2D(gl.TEXTURE_CUBE_MAP_POSITIVE_Y,0.2,gl.LUMINANCE_ALPHA,12,65534,8,4,4)} catch(e) {}try {gl.depthMask(false)} catch(e) {}try {gl.isFramebuffer(v0)} catch(e) {}try {gl.copyTexImage2D(gl.TEXTURE_CUBE_MAP_POSITIVE_X,0,gl.RGBA,5,8192,4,9,0)} catch(e) {}try {gl.getTexParameter(gl.TEXTURE_CUBE_MAP,gl.TEXTURE_MAG_FILTER)} catch(e) {}try {gl.blendEquationSeparate(gl.FUNC_SUBTRACT,gl.FUNC_REVERSE_SUBTRACT)} catch(e) {}try {gl.depthFunc(gl.getParameter(gl.DEPTH_FUNC))} catch(e) {}try {gl.texImage2D(gl.TEXTURE_CUBE_MAP_NEGATIVE_Z,0,gl.ALPHA,256,255,0,gl.ALPHA,gl.UNSIGNED_SHORT_5_5_5_1,v2)} catch(e) {}try {gl.getFramebufferAttachmentParameter(gl.FRAMEBUFFER,gl.STENCIL_ATTACHMENT,gl.FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL)} catch(e) {}try {gl.clear(gl.STENCIL_BUFFER_BIT)} catch(e) {}
-
-        }
-        function initWebGL(id, vshader, fshader) {
-            var gl = document.getElementById(id).getContext("experimental-webgl");
-            var program = gl.createProgram();
-            var add = function(type, source) {
-                    var shader = gl.createShader(type);
-                    gl.shaderSource(shader, source);
-                    gl.compileShader(shader);
-                    if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS))
-                        alert("compile error: " + gl.getShaderInfoLog(shader));
-                    gl.attachShader(program, shader);
-            };
-            add(gl.VERTEX_SHADER, vshader);
-            add(gl.FRAGMENT_SHADER, fshader);
-            gl.linkProgram(program);
-            if (!gl.getProgramParameter(program, gl.LINK_STATUS))
-                alert("link error: ");
-            gl.useProgram(program);
-            return { gl: gl, program: program };
-        }
-    </script>
-</head>
-<body onload="boom()">
-    <canvas id="canvas" width="400" height="240"></canvas>
-</body>
-</html>
