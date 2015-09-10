@@ -1,0 +1,17 @@
+--- codecs.conf	2004-01-29 17:56:32.000000000 +0100
++++ patch_avui/codecs.conf	2004-01-29 18:22:16.000000000 +0100
+@@ -1266,6 +1266,14 @@
+   dll "3ivx Delta 3.5.qtx"
+   out YUY2
+ 
++videocodec qtavui
++  info "win32/quicktime Avid Meridien Uncompressed"
++  status working
++  fourcc AVUI
++  driver qtvideo
++  dll "AvidQTAVUICodec.qtx"
++  out YUY2
++
+ videocodec qth263
+   info "win32/quicktime H.263 decoder"
+   status crashing

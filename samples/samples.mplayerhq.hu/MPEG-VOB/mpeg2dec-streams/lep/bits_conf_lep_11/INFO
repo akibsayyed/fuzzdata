@@ -1,0 +1,40 @@
+Only a minor problem found with the bitstream.
+
+However the reconstructed samples provided by the author of the
+bitstream are incorrect (see email).
+
+----------------------------------------------------------------
+
+Dear Thierry,
+Dear Video Conformance Testing AHG members,
+
+This is to report that I have decoded bits_conf_lep_11, and I have
+the following remarks:
+
+1) In sequence_header(), I find an illegal aspect_ratio_information (8).
+
+2) I am not able to get a perfect match with your reconstructed frames.
+2.090% % of the pels have a mismatch of +-1.
+
+Once again, this mismatch may be explained by the fact that you did
+not use a floating-point implementation of IDCT to produce this
+bitstream.
+
+I think that it is better to use floating-point IDCT to produce
+bitstreams (ans reconstructed frames) for Video Conformance Testing.
+Unfortunately this point not mentionned in the AHG report produced in
+Paris.
+
+I will document these problems and put this bitstream on the tape.
+
+
+Best regards,
+
+Tristan
+
+-------------------------------------------------------------
+ Tristan Savatier                  E-mail: tristan@la.tce.com
+ THOMSON CONSUMER ELECTRONICS            TEL: +1 310 568 9003
+ Los Angeles Laboratory                  FAX: +1 310 568 9002
+ 5601 W. Slauson Ave., Suite 262, Culver City,  CA 90230, USA
+-------------------------------------------------------------

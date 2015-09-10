@@ -1,0 +1,39 @@
+﻿[Script Info]
+
+;-----------------------------------;
+; Advanced Sub Station Alpha script ;
+;-----------------------------------;
+;                                   ;
+; This script has been created with ;
+;    MEDUSA - Subtitling Station    ;
+;-----------------------------------;
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Editing: 
+Original Timing: 
+Synch Point: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 800
+PlayResY: 600
+PlayDepth: 0
+Timer: 100.0000
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Daikuuji (KGNE Omake),Albert,36,&H0059E3F7,&H0059E3F7,&H0003373F,&HA003373F,0,0,0,0,100,100,0,0,1,2.9,3,2,8,8,8,0
+Style: Mayu (KGNE Omake),Albert,36,&H00AC9F95,&H00AC9F95,&H001B1714,&HA01B1714,0,0,0,0,100,100,0,0,1,2.9,3,2,8,8,8,0
+Style: Takayuki (KGNE),ResPublica,36,&H00C9F0F8,&H00C9F0F8,&H0013161A,&HA013161A,-1,0,0,0,100,100,0,0,1,2.9,3,2,8,8,8,0
+Style: Hayase (KGNE Omake),Albert,36,&H00FCB6C8,&H00FCB6C8,&H002D020D,&HA02D020D,0,0,0,0,100,100,0,0,1,2.9,3,2,8,8,8,0
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.35,0:00:03.44,Daikuuji (KGNE Omake),,0000,0000,0000,,That fart... on an insignificant thing like that!
+Dialogue: 0,0:00:04.48,0:00:05.23,Daikuuji (KGNE Omake),,0000,0000,0000,,Was there something?
+Dialogue: 0,0:00:07.32,0:00:08.98,Takayuki (KGNE),,0000,0000,0000,,It's not your fault, Akane-chan.
+Dialogue: 0,0:00:09.99,0:00:10.78,Mayu (KGNE Omake),,0000,0000,0000,,Senpai!

@@ -1,0 +1,73 @@
+Hello!
+
+I'm trying to transcode DTS. FFmepg crashed. I often have problems so I now start writing bug reports because ffmpeg is my favorite tool.
+
+
+$ ffmpeg -y -i small-sample-file  -vcodec copy -map 0:0  -acodec ac3 -map 0:1 -ab 192k -ar 48000 -ac 6 eagles.ts
+FFmpeg version SVN-r12755, Copyright (c) 2000-2008 Fabrice Bellard, et al.
+  configuration: 
+  libavutil version: 49.6.0
+  libavcodec version: 51.54.0
+  libavformat version: 52.13.0
+  libavdevice version: 52.0.0
+  built on Apr  5 2008 13:42:12, gcc: 4.1.2 20070925 (Red Hat 4.1.2-33)
+
+Seems stream 0 codec frame rate differs from container frame rate: 29.97 (30000/1001) -> 59.94 (60000/1001)
+Input #0, mpeg, from 'small-sample-file':
+  Duration: 00:00:08.5, start: 120.545400, bitrate: 9771 kb/s
+    Stream #0.0[0x1e0]: Video: mpeg2video, yuv420p, 720x480 [PAR 8:9 DAR 4:3], 6600 kb/s, 59.94 tb(r)
+    Stream #0.1[0x89]: Audio: dca, 48000 Hz, 5:1, 1536 kb/s
+    Stream #0.2[0xa0]: Audio: pcm_s16be, 48000 Hz, stereo, 1536 kb/s
+Output #0, mpegts, to 'eagles.ts':
+    Stream #0.0: Video: mpeg2video, yuv420p, 720x480, q=2-31, 6600 kb/s, 29.97 tb(c)
+    Stream #0.1: Audio: ac3, 48000 Hz, 5:1, 192 kb/s
+Stream mapping:
+  Stream #0.0 -> #0.0
+  Stream #0.1 -> #0.1
+Press [q] to stop encoding
+ERROR: block code look-up failed    4727kB time=5.5 bitrate=7076.9kbits/s    
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+[dca @ 0x8442210]Didn't get subframe DSYNC
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+ERROR: block code look-up failed
+[dca @ 0x8442210]Didn't get subframe DSYNC
+[dca @ 0x8442210]Invalid bit allocation index
+[dca @ 0x8442210]Invalid bit allocation index
+[dca @ 0x8442210]Invalid bit allocation index
+[dca @ 0x8442210]Invalid bit allocation index
+Speicherzugriffsfehler
+

@@ -1,0 +1,45 @@
+A few minor problems founds in this bitstream:
+
+-----------------------------------------------------------------
+
+From tristan Tue Oct 25 14:35:31 1994
+To: snarasimhan@gi.com
+Subject: bitstream gi6
+Cc: cfogg@netcom.com
+
+Dear Sam,
+
+I looked at your bitstream gi6, and I found some small problems.
+
+1) Contrary to what the readme file says, you have used
+   a bitrate of 14900400 Mb/s, instead of 15 Mb/s as recommanded.
+
+2) I observe small but suspicious vbv_delay mismatch.
+   I have enclosed a full trace of vbv_delay and VBV buffer occupancy
+   for gi6.  Look for the word "warning".
+   
+   For example, just after removing picture start-code of the first B-frame,
+   the VBV buffer contains 568835.60 bits.
+   The formula gives vbv_delay = (568835.60 * 90000) / 14900400 = 3435.827
+   
+   The value in your bitstream (3437) is incorrect.
+
+   Note: in the vbv trace file included, the  value of Buffer_fullness
+   (before removing any headers) is known to be sometimes incorrect,
+   due to a bug in my trace program.  This does not affect the other
+   Buffer_fullness values.
+
+   
+3) I get 11332 pels (over 2073600) i.e. 0.546% with a mismatch of +-1.
+
+   This is probably because you did not use a floating-point IDCT
+   in your encoder, or in the decoder that produced the reconstructed
+   frames that you have provided.
+   
+   We recommand to use a floating-point IDCT for generating the
+   reconstructed frames associated with the Conformance bitstreams.
+
+
+Regards,
+
+--Tristan (tristan@la.tce.com)

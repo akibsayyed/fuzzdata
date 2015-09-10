@@ -1,0 +1,68 @@
+
+
+MPlayer 0.17cvs-010803-23:07(C) 2000-2001 Arpad Gereoffy (see DOCS/AUTHORS)
+
+CommandLine: '-vo' 'mga' '1.avi' '-vc' 'ffmpeg' '-v'
+Reading /root/.mplayer/codecs.conf: 15 audio & 33 video codecs
+font: can't open file: /root/.mplayer/font/font.desc
+font: can't open file: /usr/local/share/mplayer/font/font.desc
+Detected AVI file format!
+======= AVI Header =======
+us/frame: 40000  (fps=25.000)
+max bytes/sec: 0
+padding: 0
+flags: (272) HAS_INDEX IS_INTERLEAVED
+frames  total: 37072   initial: 0
+streams: 2
+Suggested BufferSize: 0
+Size:  720 x 576
+==> Found video stream: 0
+======= STREAM Header =======
+Type: vids   FCC: DIV3 (33564944)
+Flags: 0
+Priority: 0   Language: 0
+InitialFrames: 0
+Rate: 25/1 = 25.000
+Start: 0   Len: 37072
+Suggested BufferSize: 54789
+Quality -1
+Sample size: 0
+found 'bih', 40 bytes of 40
+==> Found audio stream: 1
+======= STREAM Header =======
+Type: auds   FCC:  (0)
+Flags: 0
+Priority: 0   Language: 0
+InitialFrames: 1
+Rate: 48000/1152 = 41.667
+Start: 0   Len: 61785
+Suggested BufferSize: 384
+Quality -1
+Sample size: 0
+found 'wf', 30 bytes of 20
+======= WAVE Format =======
+Format Tag: 85 (0x55)
+Channels: 2
+Samplerate: 48000
+avg byte/sec: 15999
+Block align: 1152
+bits/sample: 0
+cbSize: 12
+Found movie at 0x280C - 0x15D37F24
+Reading INDEX block, 98857 chunks for 37072 frames
+AVI index offset: 10248
+Auto-selected AVI audio ID = 1
+Auto-selected AVI video ID = 0
+AVI: Searching for audio stream (id:1)
+AVI video length=365319287
+VIDEO:  [DIV3]  720x576  24bpp  25.00 fps  1970.9 kbps (240.6 kbyte/s)
+[V] filefmt:3  fourcc:0x33564944  size:720x576  fps:25.00  ftime:=0.0400
+Detected audio codec: [mp3] drv:1 (MPEG layer-2, layer-3)
+Initializing audio codec...
+dec_audio: Allocating 4608 + 65536 = 70144 bytes for output buffer
+mp3lib: Processor ID: 683
+mp3lib: Using SSE! optimized decore.
+AUDIO: srate=48000  chans=2  bps=2  sfmt=0x10  ratio: 16000->192000
+Can't find codec for video format 0x33564944 !
+*** Try to upgrade /root/.mplayer/codecs.conf from DOCS/codecs.conf
+*** If it's still not OK, then read DOCS/CODECS!

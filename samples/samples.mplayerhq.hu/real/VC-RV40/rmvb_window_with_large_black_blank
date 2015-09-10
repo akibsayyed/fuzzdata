@@ -1,0 +1,9 @@
+I encountered a problem when playing rmvb files using ffmpeg codec. The sample shows when playing certain types of rmvb files, mplayer does not render the picture properly, which is "squeezed" into the lefttop corner of the player window, leaving a large black blank both on the right and bottom sides.  
+
+To repeat the same problem, just type
+$ mplayer file.rmvb
+
+I was told mplayer would use ffrv40 by default for realplayer10 files. However if I use 
+$ mplayer -vc rv3040 file.rmvb; rv3040 is the real's official codec.
+
+then mplayer works fine and the video picture is good. This makes me consider the misformed picture using ffmepg codec to be a bug problem.

@@ -1,0 +1,28 @@
+Without patch:
+ffmpeg -i 24bpp_176x118.bmp
+FFmpeg version SVN-r12665, Copyright (c) 2000-2008 Fabrice Bellard, et al.
+  configuration: --cc=gcc-4.1.2 --prefix=/usr --enable-gpl --enable-libmp3lame --enable-libxvid --enable-libvorbis --enable-libx264 --enable-libfaad --enable-libfaac --enable-libamr-nb --enable-libamr-wb --enable-libtheora --enable-liba52 --enable-x11grab --enable-nonfree
+  libavutil version: 49.6.0
+  libavcodec version: 51.54.0
+  libavformat version: 52.13.0
+  libavdevice version: 52.0.0
+  built on Apr  1 2008 15:01:53, gcc: 4.1.2 (Gentoo 4.1.2 p1.0.2)
+[bmp @ 0x84465d0]invalid BMP header
+[image2 @ 0x842fc10]Could not find codec parameters (Video: bmp)
+24bpp_176x118.bmp: could not find codec parameters
+
+
+
+With patch:
+ffmpeg -i 24bpp_176x118.bmp
+FFmpeg version SVN-r12665, Copyright (c) 2000-2008 Fabrice Bellard, et al.
+  configuration: --cc=gcc-4.1.2 --prefix=/usr --enable-gpl --enable-libmp3lame --enable-libxvid --enable-libvorbis --enable-libx264 --enable-libfaad --enable-libfaac --enable-libamr-nb --enable-libamr-wb --enable-libtheora --enable-liba52 --enable-x11grab --enable-nonfree
+  libavutil version: 49.6.0
+  libavcodec version: 51.54.0
+  libavformat version: 52.13.0
+  libavdevice version: 52.0.0
+  built on Apr  1 2008 15:01:53, gcc: 4.1.2 (Gentoo 4.1.2 p1.0.2)
+Input #0, image2, from '24bpp_176x118.bmp':
+  Duration: 00:00:00.0, start: 0.000000, bitrate: N/A
+    Stream #0.0: Video: bmp, bgr24, 176x118, 25.00 tb(r)
+Must supply at least one output file

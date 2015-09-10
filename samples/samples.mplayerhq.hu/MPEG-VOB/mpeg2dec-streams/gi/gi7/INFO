@@ -1,0 +1,28 @@
+No problem found.
+
+-------------------------------------------------------
+
+From tristan  Mon Oct 31 15:14:48 1994
+To: snarasimhan@gi.com
+Subject: Re: new bitstream gi7
+Cc: confadhoc@la.tce.com
+
+Dear Sam,
+Dear Video Conformance Testing HAG members,
+
+This is to report that I have received your tape with
+your conformance bitstream gi7 (Bitstream ID = 1).
+
+I have checked the bitstream and I found no problem.
+I also get a perfect match with the reconstructed frames
+that you provided.
+
+However, it looks like you have used an incorrect preprocessing
+filter, and the images that you have encoded look terrible.  There are
+some areas where white has turned to black, like if you had used
+a filter that did some wraparound instead of saturation in [0, 255].
+
+Regards,
+
+--Tristan (tristan@la.tce.com)
+

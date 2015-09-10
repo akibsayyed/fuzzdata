@@ -1,0 +1,17 @@
+No problem found.
+
+Note: The encoder that was used to produce this bitstream did not implement
+the recommendation expressed in Note 2 of section 7.4.4.
+
+------------------------------------------------------------------------
+
+I have included the vbv trace file.
+
+Note: in the vbv trace file included, the  value of Buffer_fullness
+(before removing any headers) is known to be sometimes incorrect,
+due to a bug in my trace program.  This does not affect the other
+Buffer_fullness values.
+
+Regards,
+
+--Tristan (tristan@la.tce.com)

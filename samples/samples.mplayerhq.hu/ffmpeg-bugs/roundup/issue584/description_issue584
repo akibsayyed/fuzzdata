@@ -1,0 +1,80 @@
+File issue430_wl2776_dump.ts contains a dump of the MPEG2 transport stream
+File mf_read.c contains a simple program, reading from that file and dropping packets.
+
+This program causes memory leaks.
+
+Valgrind output:
+
+==23052== Memcheck, a memory error detector.
+==23052== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.
+==23052== Using LibVEX rev 1854, a library for dynamic binary translation.
+==23052== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.
+==23052== Using valgrind-3.3.1-Debian, a dynamic binary instrumentation framework.
+==23052== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.
+==23052== For more details, rerun with: -v
+==23052==
+==23052== My PID = 23052, parent PID = 23750.  Prog and args are:
+==23052==    ./mf_read
+==23052==
+==23052==
+==23052== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 27 from 1)
+==23052== malloc/free: in use at exit: 19,840 bytes in 62 blocks.
+==23052== malloc/free: 77,346 allocs, 77,284 frees, 49,211,549 bytes allocated.
+==23052== For counts of detected errors, rerun with: -v
+==23052== searching for pointers to 62 not-freed blocks.
+==23052== checked 3,406,924 bytes.
+==23052==
+==23052== 19,840 bytes in 62 blocks are definitely lost in loss record 1 of 1
+==23052==    at 0x4023C4A: memalign (vg_replace_malloc.c:460)
+==23052==    by 0x4023CFE: posix_memalign (vg_replace_malloc.c:569)
+==23052==    by 0x4851774: av_malloc (mem.c:66)
+==23052==    by 0x48517FF: av_mallocz (mem.c:141)
+==23052==    by 0x47B4DEB: add_pes_stream (mpegts.c:1020)
+==23052==    by 0x47B4F27: handle_packet (mpegts.c:1050)
+==23052==    by 0x47B534A: handle_packets (mpegts.c:1174)
+==23052==    by 0x47B5DC1: mpegts_read_packet (mpegts.c:1391)
+==23052==    by 0x4764D07: av_read_packet (utils.c:591)
+==23052==    by 0x476637A: av_read_frame_internal (utils.c:972)
+==23052==    by 0x4769CB9: av_find_stream_info (utils.c:2049)
+==23052==    by 0x80488E9: main (mf_read.c:33)
+==23052==
+==23052== LEAK SUMMARY:
+==23052==    definitely lost: 19,840 bytes in 62 blocks.
+==23052==      possibly lost: 0 bytes in 0 blocks.
+==23052==    still reachable: 0 bytes in 0 blocks.
+==23052==         suppressed: 0 bytes in 0 blocks.
+
+
+Definitely the leak is caused by not freeing the memory, storing PEScontext, pointed by pes_filter.opaque.
+
+If I add the following two lines to the file mpegts.c to the function mpegts_close_filter:
+
+    if (filter->type == MPEGTS_PES)
+        av_freep(&filter->u.pes_filter.opaque);
+
+, then valgrind gives the following error (double free): 
+
+==30708== My PID = 30708, parent PID = 23750.  Prog and args are:
+==30708==    ./mf_read
+==30708==
+==30708== Invalid free() / delete / delete[]
+==30708==    at 0x4024B4A: free (vg_replace_malloc.c:323)
+==30708==    by 0x48517C8: av_free (mem.c:128)
+==30708==    by 0x476A959: av_close_input_stream (utils.c:2261)
+==30708==    by 0x476AB50: av_close_input_file (utils.c:2287)
+==30708==    by 0x80489BA: main (mf_read.c:47)
+==30708==  Address 0x4ab4f50 is 0 bytes inside a block of size 320 free'd
+==30708==    at 0x4024B4A: free (vg_replace_malloc.c:323)
+==30708==    by 0x48517C8: av_free (mem.c:128)
+==30708==    by 0x48517E3: av_freep (mem.c:135)
+==30708==    by 0x47B3765: mpegts_close_filter (mpegts.c:339)
+==30708==    by 0x47B5E29: mpegts_read_close (mpegts.c:1402)
+==30708==    by 0x476A8B6: av_close_input_stream (utils.c:2248)
+==30708==    by 0x476AB50: av_close_input_file (utils.c:2287)
+==30708==    by 0x80489BA: main (mf_read.c:47)
+==30708==
+==30708== ERROR SUMMARY: 59 errors from 1 contexts (suppressed: 27 from 1)
+==30708== malloc/free: in use at exit: 0 bytes in 0 blocks.
+==30708== malloc/free: 77,346 allocs, 77,405 frees, 49,211,549 bytes allocated.
+==30708== For counts of detected errors, rerun with: -v
+==30708== All heap blocks were freed -- no leaks are possible.

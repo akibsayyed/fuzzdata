@@ -1,0 +1,1039 @@
+FFmpeg version SVN-r19265, Copyright (c) 2000-2009 Fabrice Bellard, et al.
+  configuration: 
+  libavutil     50. 3. 0 / 50. 3. 0
+  libavcodec    52.32. 0 / 52.32. 0
+  libavformat   52.34. 1 / 52.34. 1
+  libavdevice   52. 2. 0 / 52. 2. 0
+  libswscale     0. 7. 1 /  0. 7. 1
+  built on Jun 24 2009 12:37:01, gcc: 4.2.4 (Ubuntu 4.2.4-1ubuntu4)
+
+Seems stream 0 codec frame rate differs from container frame rate: 50.00 (50/1) -> 25.00 (25/1)
+Input #0, mpegts, from '/home/antonio/videos/dvbt-ffmpeg-seg-fault.ts':
+  Duration: 00:00:08.35, start: 69898.101378, bitrate: 3922 kb/s
+    Stream #0.0[0x65]: Video: mpeg2video, yuv420p, 720x576 [PAR 16:15 DAR 4:3], 15000 kb/s, 25 tbr, 90k tbn, 50 tbc
+    Stream #0.1[0x67]: Audio: mp2, 48000 Hz, 2 channels, s16, 192 kb/s
+Output #0, avi, to '/tmp/crash.avi':
+    Stream #0.0: Video: mpeg4, yuv420p, 720x576 [PAR 16:15 DAR 4:3], q=2-31, 200 kb/s, 25 tbn, 25 tbc
+    Stream #0.1: Audio: mp2, 48000 Hz, 2 channels, s16, 64 kb/s
+Stream mapping:
+  Stream #0.0 -> #0.0
+  Stream #0.1 -> #0.1
+Press [q] to stop encoding
+frame=   77 fps=  0 q=31.0 size=     695kB time=3.58 bitrate=1592.8kbits/s    [mpeg2video @ 0x8a29ee0]ac-tex damaged at 31 2
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 3
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 7 4
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 5 5
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 15 6
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 7
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 1 8
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 5 10
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 3 11
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 2 12
+[mpeg2video @ 0x8a29ee0]Warning MVs not available
+[mpeg2video @ 0x8a29ee0]concealing 1530 DC, 1530 AC, 1530 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 20 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 1
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 2
+[mpeg2video @ 0x8a29ee0]Warning MVs not available
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]Missing picture start code
+    Last message repeated 27 times
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 38 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 1
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 3
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 37 4
+[mpeg2video @ 0x8a29ee0]00 motion_type at 24 11
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 13
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 14
+[mpeg2video @ 0x8a29ee0]00 motion_type at 11 19
+[mpeg2video @ 0x8a29ee0]00 motion_type at 40 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 12 21
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 7 22
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 42 24
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 26
+[mpeg2video @ 0x8a29ee0]concealing 1260 DC, 1260 AC, 1260 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 16 1
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 3
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 9 4
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 22 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 6
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 8 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 42 9
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 10
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 40 11
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 39 15
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 17
+[mpeg2video @ 0x8a29ee0]00 motion_type at 42 18
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 22
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 26
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 7 30
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 6 31
+[mpeg2video @ 0x8a29ee0]invalid cbp at 13 32
+[mpeg2video @ 0x8a29ee0]concealing 1395 DC, 1395 AC, 1395 MV errors
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 19 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 19 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 39 4
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 9
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 10
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 14 13
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 29 14
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 21
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 7 21
+[mpeg2video @ 0x8a29ee0]00 motion_type at 8 22
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 28 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 26
+[mpeg2video @ 0x8a29ee0]invalid cbp at 19 34
+[mpeg2video @ 0x8a29ee0]concealing 1141 DC, 1141 AC, 1141 MV errors
+[mpegts @ 0x89fa440]invalid dts/pts combination
+[mpeg2video @ 0x8a29ee0]Missing picture start code, guessing missing values
+[mpeg2video @ 0x8a29ee0]00 motion_type at 8 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 28 1
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 34 3
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 4
+[mpeg2video @ 0x8a29ee0]00 motion_type at 16 5
+[mpeg2video @ 0x8a29ee0]00 motion_type at 25 10
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 3 12
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 39 14
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 15
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 5 16
+[mpeg2video @ 0x8a29ee0]00 motion_type at 15 19
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 6 23
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 30 26
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 43 29
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 30
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 35
+[mpeg2video @ 0x8a29ee0]Warning MVs not available
+[mpeg2video @ 0x8a29ee0]concealing 1173 DC, 1173 AC, 1173 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 33 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 1
+[mpeg2video @ 0x8a29ee0]00 motion_type at 40 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 3
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 14 4
+[mpeg2video @ 0x8a29ee0]00 motion_type at 40 8
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 11 11
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 16 13
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 15
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 15 16
+[mpeg2video @ 0x8a29ee0]00 motion_type at 19 17
+[mpeg2video @ 0x8a29ee0]00 motion_type at 41 19
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 35 22
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 23
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 7 24
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 9 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 24 26
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 19 28
+[mpeg2video @ 0x8a29ee0]invalid cbp at 0 31
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 5 32
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 33
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]concealing 1372 DC, 1372 AC, 1372 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 44 1
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 40 6
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 7 8
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 14 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 10
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 21 18
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 19
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 20 23
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 26
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 31 35
+[mpeg2video @ 0x8a29ee0]00 motion_type at 21 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 1
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 38 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 3
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 27 4
+[mpeg2video @ 0x8a29ee0]00 motion_type at 21 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 8
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 9 9
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 12
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 38 13
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 14
+[mpeg2video @ 0x8a29ee0]00 motion_type at 37 18
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 20
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 36 23
+[mpeg2video @ 0x8a29ee0]00 motion_type at 40 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 26
+[mpeg2video @ 0x8a29ee0]invalid cbp at 15 29
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 34
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 16 35
+[mpeg2video @ 0x8a29ee0]concealing 1170 DC, 1170 AC, 1170 MV errors
+[mpegts @ 0x89fa440]Invalid timestamps stream=0, pts=6291264128, dts=7797015664, size=7159
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 2 1
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 2
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 1
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 4 4
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 3
+[mpeg2video @ 0x8a29ee0]00 motion_type at 15 5
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 8
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 8 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 11
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 13
+[mpeg2video @ 0x8a29ee0]00 motion_type at 23 15
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 16
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]Missing picture start code
+    Last message repeated 11 times
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 39 0
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 2 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 12 3
+[mpeg2video @ 0x8a29ee0]00 motion_type at 16 4
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 5
+[mpeg2video @ 0x8a29ee0]00 motion_type at 41 6
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 13
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 14
+[mpeg2video @ 0x8a29ee0]00 motion_type at 26 21
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 22
+[mpeg2video @ 0x8a29ee0]00 motion_type at 27 23
+[mpeg2video @ 0x8a29ee0]00 motion_type at 25 24
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 4 26
+[mpeg2video @ 0x8a29ee0]00 motion_type at 29 27
+[mpeg2video @ 0x8a29ee0]concealing 979 DC, 979 AC, 979 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 3
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 4
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 4 5
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 8
+[mpeg2video @ 0x8a29ee0]invalid cbp at 8 10
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 11 11
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 6 12
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 36 14
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 16
+[mpeg2video @ 0x8a29ee0]00 motion_type at 29 17
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 18
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 19
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 12 20
+[mpeg2video @ 0x8a29ee0]invalid cbp at 5 21
+[mpeg2video @ 0x8a29ee0]00 motion_type at 8 22
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 23
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 8 26
+[mpeg2video @ 0x8a29ee0]invalid cbp at 19 27
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 7 28
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 19 29
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 30
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 31
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 6 32
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 33
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 34
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 35
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 15 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 30 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 4
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 27 5
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 6
+[mpeg2video @ 0x8a29ee0]00 motion_type at 41 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 14 14
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 15
+[mpeg2video @ 0x8a29ee0]00 motion_type at 31 16
+[mpeg2video @ 0x8a29ee0]00 motion_type at 18 17
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]invalid cbp at 3 23
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 29
+[mpeg2video @ 0x8a29ee0]00 motion_type at 36 30
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 19 23
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 34
+[mpeg2video @ 0x8a29ee0]concealing 1357 DC, 1357 AC, 1357 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 27 1
+[mpeg2video @ 0x8a29ee0]00 motion_type at 15 4
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 22 5
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 6
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 36 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 9
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 11
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 14 15
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 9 16
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 17
+[mpeg2video @ 0x8a29ee0]00 motion_type at 40 18
+[mpeg2video @ 0x8a29ee0]00 motion_type at 26 21
+[mpeg2video @ 0x8a29ee0]00 motion_type at 20 23
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 20 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 14 27
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 32
+[mpeg2video @ 0x8a29ee0]concealing 1350 DC, 1350 AC, 1350 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 29 0
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 39 1
+[mpeg2video @ 0x8a29ee0]00 motion_type at 32 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 19 3
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 6
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 23 9
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 19 15
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 15
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 18
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 4 21
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 19 21
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 14 23
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 16 26
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 7 26
+[mpeg2video @ 0x8a29ee0]00 motion_type at 30 27
+[mpeg2video @ 0x8a29ee0]00 motion_type at 14 28
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 31 33
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 1
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 7 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 3
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 27 6
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+    Last message repeated 1 times
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 13 9
+[mpeg2video @ 0x8a29ee0]00 motion_type at 14 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 13
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 15
+[mpeg2video @ 0x8a29ee0]invalid cbp at 25 16
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 26 18
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 32 19
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 16 21
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 22
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 14 23
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 26
+[mpeg2video @ 0x8a29ee0]00 motion_type at 12 27
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 5 28
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 9 30
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 34
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 35
+[mpeg2video @ 0x8a29ee0]concealing 1485 DC, 1485 AC, 1485 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 36 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 16 1
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 4
+[mpeg2video @ 0x8a29ee0]00 motion_type at 8 5
+[mpeg2video @ 0x8a29ee0]00 motion_type at 37 6
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 2 7
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 23 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 9
+[mpeg2video @ 0x8a29ee0]00 motion_type at 35 12
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 8 14
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 16 17
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 24 18
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 19
+[mpeg2video @ 0x8a29ee0]00 motion_type at 25 21
+[mpeg2video @ 0x8a29ee0]00 motion_type at 15 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 39 29
+[mpeg2video @ 0x8a29ee0]00 motion_type at 37 31
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 32
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 33
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 5 35
+[mpeg2video @ 0x8a29ee0]concealing 1375 DC, 1375 AC, 1375 MV errors
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 23 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 1
+[mpeg2video @ 0x8a29ee0]00 motion_type at 16 2
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 29 3
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 7 4
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 6
+[mpeg2video @ 0x8a29ee0]00 motion_type at 43 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 40 10
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 19 11
+[mpeg2video @ 0x8a29ee0]invalid cbp at 5 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 28 13
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 17 14
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 16
+[mpeg2video @ 0x8a29ee0]00 motion_type at 33 17
+[mpeg2video @ 0x8a29ee0]00 motion_type at 16 20
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 42 22
+[mpeg2video @ 0x8a29ee0]00 motion_type at 43 23
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 5 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 20 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 16 28
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 29
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 33
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 31 34
+[mpeg2video @ 0x8a29ee0]00 motion_type at 23 1
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 3
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 6
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 24 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 9
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 10
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 13
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 14
+[mpeg2video @ 0x8a29ee0]00 motion_type at 31 15
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 16
+[mpeg2video @ 0x8a29ee0]00 motion_type at 11 17
+[mpeg2video @ 0x8a29ee0]00 motion_type at 24 18
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 14 19
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 18 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 21
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 22
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 23
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 11 26
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 2 3
+[mpeg2video @ 0x8a29ee0]invalid cbp at 9 28
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 29
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 31
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 32
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 9 33
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 18 34
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 35
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 3
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 4
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 5
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 19 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 8
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 11
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 12
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 13
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 37 15
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 17
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 18
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]Missing picture start code
+    Last message repeated 9 times
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpegts @ 0x89fa440]Invalid timestamps stream=1, pts=6291304448, dts=8589934551, size=1059
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 1
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 3
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 4
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 7
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 3 8
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 9
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 10
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 25 11
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 12 12
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 14
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 16
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 17
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 7 18
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 10 19
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 20
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 6 21
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 4 22
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 1
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 2
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 3
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 4
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 5
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 6
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 0 7
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 8
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 10
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 11
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 0 12
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 1 13
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 14
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 15
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 16
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 17
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 1 18
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 0 19
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 20
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 21
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 23
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 24
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 0 25
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 26
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 0 27
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 0 28
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 0 29
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 0 30
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 1 32
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 0 33
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 0 34
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 0 35
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 40 1
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 2
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 34 3
+[mpeg2video @ 0x8a29ee0]00 motion_type at 15 5
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 18 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 34 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 11
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 5 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 40 13
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 32 16
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 20 17
+[mpeg2video @ 0x8a29ee0]00 motion_type at 41 19
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 22 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 22
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 23
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 12 34
+[mpeg2video @ 0x8a29ee0]00 motion_type at 26 35
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 3
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 4
+[mpeg2video @ 0x8a29ee0]00 motion_type at 16 5
+[mpeg2video @ 0x8a29ee0]00 motion_type at 30 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 26 9
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 24 11
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 41 14
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 16
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 17
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 18
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 12 19
+[mpeg2video @ 0x8a29ee0]00 motion_type at 18 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 24 21
+[mpeg2video @ 0x8a29ee0]00 motion_type at 25 22
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 24
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 25
+[mpeg2video @ 0x8a29ee0]concealing 1080 DC, 1080 AC, 1080 MV errors
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 15 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 14 1
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 19 4
+[mpeg2video @ 0x8a29ee0]invalid cbp at 22 5
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 4 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 21 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 11
+[mpeg2video @ 0x8a29ee0]invalid cbp at 22 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 14
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 4 15
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 18
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 19
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 42 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 21
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 5 22
+[mpeg2video @ 0x8a29ee0]invalid cbp at 42 23
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 4 26
+[mpeg2video @ 0x8a29ee0]00 motion_type at 39 28
+[mpeg2video @ 0x8a29ee0]00 motion_type at 31 30
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 32
+[mpeg2video @ 0x8a29ee0]00 motion_type at 25 35
+[mpeg2video @ 0x8a29ee0]concealing 1485 DC, 1485 AC, 1485 MV errors
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 36 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 15 6
+[mpeg2video @ 0x8a29ee0]invalid cbp at 17 8
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 8 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 15 15
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 37 18
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 19
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 28 23
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 24
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 4 26
+[mpeg2video @ 0x8a29ee0]00 motion_type at 23 28
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 29
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 30
+[mpeg2video @ 0x8a29ee0]00 motion_type at 40 35
+[mpeg2video @ 0x8a29ee0]concealing 1260 DC, 1260 AC, 1260 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 0
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpegts @ 0x89fa440]invalid dts/pts combination
+[mpeg2video @ 0x8a29ee0]Missing picture start code, guessing missing values
+[mpeg2video @ 0x8a29ee0]00 motion_type at 23 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 38 3
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 4
+[mpeg2video @ 0x8a29ee0]invalid cbp at 5 5
+[mpeg2video @ 0x8a29ee0]00 motion_type at 37 6
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 14 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 11
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 35 14
+[mpeg2video @ 0x8a29ee0]00 motion_type at 33 16
+[mpeg2video @ 0x8a29ee0]concealing 1477 DC, 1477 AC, 1477 MV errors
+[mpegts @ 0x89fa440]Invalid timestamps stream=0, pts=6291343328, dts=8589814720, size=7160
+[mpeg2video @ 0x8a29ee0]Missing picture start code
+    Last message repeated 13 times
+[mpeg2video @ 0x8a29ee0]concealing 1477 DC, 1477 AC, 1477 MV errors
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 16 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 3
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 4
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 9
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 11
+[mpeg2video @ 0x8a29ee0]00 motion_type at 11 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 13
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 15
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 18
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 19
+[mpeg2video @ 0x8a29ee0]00 motion_type at 8 20
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 23
+[mpeg2video @ 0x8a29ee0]00 motion_type at 15 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 26
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 39 27
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 44 28
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 30
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 42 31
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 33
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 35
+[mpeg2video @ 0x8a29ee0]concealing 1579 DC, 1579 AC, 1579 MV errors
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 20 0
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 3 1
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 22 2
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 2 3
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 2 5
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 2 6
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 3 7
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 6 8
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 14 9
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 42 10
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 0 11
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 12
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 2 13
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 0 16
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 17
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 19
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 20
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 2 21
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 22
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 23
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 14 24
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 3 25
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 5 27
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 29
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 1 30
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 8 31
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 2 32
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 3 33
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 5 34
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 3 35
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 7
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 38 9
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 11
+[mpeg2video @ 0x8a29ee0]00 motion_type at 24 12
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 14
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 18
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 15 19
+[mpeg2video @ 0x8a29ee0]00 motion_type at 41 23
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 33 34
+[mpeg2video @ 0x8a29ee0]end mismatch left=857 1AC000
+[mpeg2video @ 0x8a29ee0]concealing 855 DC, 855 AC, 855 MV errors
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 14 0
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 4 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 8 3
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 2 4
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 25 6
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 11 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 21 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 10
+[mpeg2video @ 0x8a29ee0]invalid cbp at 0 11
+[mpeg2video @ 0x8a29ee0]invalid cbp at 4 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 44 13
+[mpeg2video @ 0x8a29ee0]00 motion_type at 29 16
+[mpeg2video @ 0x8a29ee0]invalid cbp at 4 21
+[mpeg2video @ 0x8a29ee0]concealing 1575 DC, 1575 AC, 1575 MV errors
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 11 0
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 3
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 11 4
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 10 5
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 9 6
+[mpeg2video @ 0x8a29ee0]00 motion_type at 20 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 11
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 4 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 13
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 14
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 15
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 14 18
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 22 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 22
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 31 25
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 23 26
+[mpeg2video @ 0x8a29ee0]00 motion_type at 8 27
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 14 28
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 6 29
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 35 30
+[mpeg2video @ 0x8a29ee0]00 motion_type at 26 31
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 10 33
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 34
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 3 35
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 0
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 3
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 22 13
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 14
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 15
+[mpeg2video @ 0x8a29ee0]00 motion_type at 18 16
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 17
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 25 19
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 9 20
+[mpeg2video @ 0x8a29ee0]slice mismatch
+    Last message repeated 1 times
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 7 25
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 16 27
+[mpeg2video @ 0x8a29ee0]00 motion_type at 19 28
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 27 33
+[mpeg2video @ 0x8a29ee0]00 motion_type at 15 35
+[mpeg2video @ 0x8a29ee0]concealing 1047 DC, 1047 AC, 1047 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 39 6
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 9
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 11 11
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 13
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 14
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 15
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 16
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 17
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 19
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 21
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 4 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 26
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 28
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 3 29
+[mpeg2video @ 0x8a29ee0]invalid cbp at 26 30
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 8 31
+[mpeg2video @ 0x8a29ee0]00 motion_type at 28 34
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 35
+[mpeg2video @ 0x8a29ee0]concealing 1305 DC, 1305 AC, 1305 MV errors
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 10 1
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 4 2
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 6 3
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 10 5
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 8
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 5
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 12 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 18 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 36 10
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 13 11
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 11 13
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 14
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 15
+[mpeg2video @ 0x8a29ee0]00 motion_type at 37 16
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 17
+[mpeg2video @ 0x8a29ee0]00 motion_type at 14 19
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 20
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 22
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 23
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 24
+[mpeg2video @ 0x8a29ee0]concealing 1444 DC, 1444 AC, 1444 MV errors
+[mpegts @ 0x89fa440]Invalid timestamps stream=0, pts=6289391280, dts=6291379328, size=21140
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]invalid cbp at 5 2
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 3
+[mpeg2video @ 0x8a29ee0]00 motion_type at 37 4
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 24 6
+[mpeg2video @ 0x8a29ee0]00 motion_type at 25 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 39 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 36 9
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 12 10
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 25 13
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 6 14
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 5 15
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 18
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 19
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 21
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 22
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 5 23
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 26
+[mpeg2video @ 0x8a29ee0]invalid cbp at 0 27
+[mpeg2video @ 0x8a29ee0]invalid cbp at 0 28
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 4 29
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 30
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 13 33
+[mpeg2video @ 0x8a29ee0]00 motion_type at 8 35
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 0
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 15 1
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 2
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 1 4
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 36 5
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 6
+[mpeg2video @ 0x8a29ee0]00 motion_type at 37 8
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 20 13
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 16
+[mpeg2video @ 0x8a29ee0]invalid cbp at 0 17
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 19
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 14 21
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 23
+[mpeg2video @ 0x8a29ee0]invalid cbp at 0 25
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 20 27
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 29
+[mpeg2video @ 0x8a29ee0]invalid cbp at 0 30
+[mpeg2video @ 0x8a29ee0]00 motion_type at 24 31
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 33
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 34
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 21 35
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 43 1
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 4
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 5
+[mpeg2video @ 0x8a29ee0]00 motion_type at 21 6
+[mpeg2video @ 0x8a29ee0]00 motion_type at 11 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 27 9
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 12 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 14 11
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 14
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 18 17
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 18
+[mpeg2video @ 0x8a29ee0]00 motion_type at 11 19
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 6 20
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]invalid cbp at 4 22
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 23
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 27 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 26
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 27
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]concealing 1575 DC, 1575 AC, 1575 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 4
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 0 6
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 21 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 19 19
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 12 11
+[mpeg2video @ 0x8a29ee0]00 motion_type at 20 13
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 20 14
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 16
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 19
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 20
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 2 21
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 27
+[mpeg2video @ 0x8a29ee0]invalid cbp at 34 29
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 31 31
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 32
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 34
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 2 35
+[mpeg2video @ 0x8a29ee0]concealing 1123 DC, 1123 AC, 1123 MV errors
+[mpeg2video @ 0x8a29ee0]intra matrix invalid, ignoring
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 0
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 2 1
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 2
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 2 3
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 4
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 1 5
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 5 7
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 1 8
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 9
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 16 11
+[mpeg2video @ 0x8a29ee0]invalid mb type in I Frame at 2 13
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 10 14
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 13 15
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 13 16
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 17
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 18
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 19
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 8 22
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 11 24
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 4 25
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 29 26
+[mpeg2video @ 0x8a29ee0]skipped MB in I frame at 5 27
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 5 28
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 34 4
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 20 10
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 36 13
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 14
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 15
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 16
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 6 17
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 13 19
+[mpeg2video @ 0x8a29ee0]00 motion_type at 5 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 12
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 29 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 25
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 27
+[mpeg2video @ 0x8a29ee0]00 motion_type at 19 28
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 2 30
+[mpeg2video @ 0x8a29ee0]concealing 1037 DC, 1037 AC, 1037 MV errors
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 35 0
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 32 2
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 28 5
+[mpeg2video @ 0x8a29ee0]00 motion_type at 30 7
+[mpeg2video @ 0x8a29ee0]00 motion_type at 16 9
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 11
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 12
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 17
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 18
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 33 21
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 0 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 26
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 27
+[mpeg2video @ 0x8a29ee0]00 motion_type at 31 28
+[mpeg2video @ 0x8a29ee0]00 motion_type at 21 29
+[mpeg2video @ 0x8a29ee0]00 motion_type at 9 31
+[mpeg2video @ 0x8a29ee0]00 motion_type at 32 34
+[mpeg2video @ 0x8a29ee0]00 motion_type at 8 35
+[mpeg2video @ 0x8a29ee0]concealing 1575 DC, 1575 AC, 1575 MV errors
+[mpegts @ 0x89fa440]Invalid timestamps stream=0, pts=5880380736, dts=6291411728, size=13183
+[mpeg2video @ 0x8a29ee0]Missing picture start code
+    Last message repeated 54 times
+[mpeg2video @ 0x8a29ee0]concealing 1575 DC, 1575 AC, 1575 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 13 0
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 2
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]Missing picture start code
+    Last message repeated 24 times
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]slice mismatch
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]Missing picture start code
+    Last message repeated 4 times
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]Missing picture start code
+    Last message repeated 19 times
+[mpeg2video @ 0x8a29ee0]concealing 1620 DC, 1620 AC, 1620 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 25 0
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 28 1
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]invalid cbp at 33 7
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 5 8
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 43 9
+[mpeg2video @ 0x8a29ee0]00 motion_type at 17 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 12 11
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 12
+[mpeg2video @ 0x8a29ee0]00 motion_type at 18 13
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 10 17
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 18
+[mpeg2video @ 0x8a29ee0]00 motion_type at 43 20
+[mpeg2video @ 0x8a29ee0]00 motion_type at 8 21
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 22
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 11 23
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 25
+[mpeg2video @ 0x8a29ee0]00 motion_type at 12 31
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 33
+[mpeg2video @ 0x8a29ee0]concealing 1125 DC, 1125 AC, 1125 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 33 3
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 6
+[mpeg2video @ 0x8a29ee0]invalid mb type in P Frame at 1 7
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 3 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 36 11
+[mpeg2video @ 0x8a29ee0]concealing 1485 DC, 1485 AC, 1485 MV errors
+[mpeg2video @ 0x8a29ee0]Missing picture start code
+    Last message repeated 15 times
+[mpeg2video @ 0x8a29ee0]concealing 1485 DC, 1485 AC, 1485 MV errors
+frame=  142 fps=140 q=31.0 size=     759kB time=5.18 bitrate=1199.1kbits/s    [mpegts @ 0x89fa440]invalid dts/pts combination
+[mpeg2video @ 0x8a29ee0]Missing picture start code, guessing missing values
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 0
+[mpeg2video @ 0x8a29ee0]00 motion_type at 8 1
+[mpeg2video @ 0x8a29ee0]00 motion_type at 33 6
+[mpeg2video @ 0x8a29ee0]00 motion_type at 6 8
+[mpeg2video @ 0x8a29ee0]00 motion_type at 20 9
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 10
+[mpeg2video @ 0x8a29ee0]00 motion_type at 25 11
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 1 12
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 29 20
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 24 22
+[mpeg2video @ 0x8a29ee0]00 motion_type at 25 23
+[mpeg2video @ 0x8a29ee0]00 motion_type at 10 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 25 27
+[mpeg2video @ 0x8a29ee0]00 motion_type at 4 28
+[mpeg2video @ 0x8a29ee0]00 motion_type at 31 29
+[mpeg2video @ 0x8a29ee0]00 motion_type at 22 25
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 37 31
+[mpeg2video @ 0x8a29ee0]concealing 900 DC, 900 AC, 900 MV errors
+[mpeg2video @ 0x8a29ee0]00 motion_type at 16 2
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 7 3
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 20 5
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 6
+[mpeg2video @ 0x8a29ee0]00 motion_type at 42 13
+[mpeg2video @ 0x8a29ee0]00 motion_type at 11 14
+[mpeg2video @ 0x8a29ee0]invalid cbp at 31 15
+[mpeg2video @ 0x8a29ee0]00 motion_type at 7 16
+[mpeg2video @ 0x8a29ee0]invalid cbp at 27 19
+[mpeg2video @ 0x8a29ee0]mb incr damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 21
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 20 22
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 24
+[mpeg2video @ 0x8a29ee0]00 motion_type at 2 25
+[mpeg2video @ 0x8a29ee0]invalid cbp at 3 26
+[mpeg2video @ 0x8a29ee0]00 motion_type at 1 27
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 30 30
+[mpeg2video @ 0x8a29ee0]ac-tex damaged at 21 31
+[mpeg2video @ 0x8a29ee0]invalid mb type in B Frame at 4 33
+[mpeg2video @ 0x8a29ee0]00 motion_type at 0 34
+[mpeg2video @ 0x8a29ee0]concealing 1125 DC, 1125 AC, 1125 MV errors
+[mpeg2video @ 0x8a29ee0]matrix damaged
+[mpeg2video @ 0x8a29ee0]sequence header damaged
+[mpeg2video @ 0x8a29ee0]00 motion_type at 3 0
+[mpeg2video @ 0x8a29ee0]slice mismatch

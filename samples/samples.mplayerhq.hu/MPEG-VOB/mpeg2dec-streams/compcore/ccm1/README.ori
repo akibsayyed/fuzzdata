@@ -1,0 +1,80 @@
+Dear MPEG colleagues,
+
+
+tcela-11v2 is a malefic bitstream, but it reveals a real problem.
+The USNB has a minor technical comment regarding the DCT/IDCT.
+It wants some informative text included in the standard to point
+out the problem.
+
+Does MPEG has the will to fix the problem with some normative text?
+
+To ease a little bit the pain of accepting that some decoders on the
+market are not quite compliant, we can take a glimpse to the last
+Section (2.6.3 Audio decoder tests) of MPEG-1 Compliance DIS:
+
+"To be called an ISO/IEC 11172-3 audio decoder, the decoder shall ..."
+
+"To be called a limited accuracy ISO/IEC 11172-3 audio decoder, ..."
+	        ^^^^^^^^^^^^^^^^
+
+and we could put something in the standard like:
+
+"To be called an ISO/IEC 13818-2 video decoder, the decoder shall ...
+and the IDCT shall conform to IEEE Standard Specification and shall
+decode correctly all video bitstreams produced by realistic video
+encoders (i.e. encoders using a reasonable precise FDCT).
+
+"To be called a limited accuracy ISO/IEC 13818-2 video decoder, the
+decoder shall ... and the IDCT shall conform to IEEE Standard
+Specification."
+
+
+ccm1 is an MPEG-1 constrained bitstream generated with a "realistic"
+encoder. ccm1 checks if the decoder IDCT has enough margin to handle
+the worst-case quantization noise. The input blocks are sort of
+black/white checker board that maximizes the amplitudes of individual
+frequencies. The quantization scale and quantization tables were
+choosen in such a way to increase these amplitudes with the maximum
+quantization noise. This bitstream has the potential to generate the
+maximum intermediate results in the IDCT and to cause overflow.
+
+
+Sampling dimensions	16 x 16 @ 29.97 Hz 
+picture structure	I P P P P... (one I and 128 P)
+
+Bitstream file		ccm1.mpg
+Reconstructed frames	ccm1.decoded
+Decoding trace		ccm1.trace
+
+frame format		4:2:0 frame ("display" order) 8 bit
+
+                       width
+                +---------------+
+                |               |
+                |      Y0       | height
+                |width/2        |
+                +-------+-------+
+                |  Cb0  | height/2
+                +-------+
+                |  Cr0  | height/2
+                +-------+-------+
+                |               |
+                |      Y1       |
+                |               |
+                +-------+-------+
+                |       |
+                  etc...
+
+
+Best regards,
+
+Sorin
+
+
+PS.  I'll send the ccm1 bitstream only to bitsadhoc@la.tce.com
+-----------------------------------------------------------------------
+Sorin C. Cismas
+Tel:	(408) 773-8310			CompCore Multimedia, Inc.
+Fax:	(408) 773-0432			1250 Oakmead Parkway, Suite 301
+E-mail:	sorin@compcore.com		Sunnyvale, CA  94086
+-----------------------------------------------------------------------

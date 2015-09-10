@@ -1,0 +1,582 @@
+Xlib:  extension "GLX" missing on display ":0.0".
+<init> : Avifile CVS-0.7.20-021121-09:54-2.95.3
+<init> : Available CPU flags: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 mmx fxsr sse
+<init> : 669.54 MHz Pentium III (Coppermine) processor detected
+<aviplay> : Debug is on 0
+<reader> : checking: indy_500.wmv
+<ASF reader> : MainHeader: 46CB22BF-9A40-4DC7-8C03-1B3CA0A9DE5F
+ Created: Wed Aug 28 02:06:51 2002   File size=5633818   Packets=514
+ Total time=37.0 sec   Play time=31.0 sec   Preroll=3.0 sec
+ Flags=0x2  Packet size=10954  (=10954)  MaxBandwidth=1438048 bps
+<ASF reader> : header contains "header extension" (1643b)
+<ASF reader> : VersionInfo: WMFSDKVersion
+<ASF reader> : VersionInfo: 9.00.00.2798
+<ASF reader> : VersionInfo: MFSDKNeeded
+<ASF reader> : Codec Type: Audio
+<ASF reader> : Codec Name: Windows Media Audio 9 Professional
+<ASF reader> : Codec Description: 256 kbps, 48 kHz, 5.1 channel 24 bit 2-pass VBR
+<ASF reader> : Codec Type: Video
+<ASF reader> : Codec Name: Windows Media Video 9
+<ASF reader> : Codec Description: 
+<ASF reader> : StreamHeader: audio media   Error correction: audio spread
+ Time offset=0  Stream size=36  Error size=8  Stream=1  Reserved=0xe2f6b8
+<ASF reader> : StreamHeader: video media   Error correction: no error correction
+ Time offset=0  Stream size=55  Error size=0  Stream=2  Reserved=0x1284860
+<ASF reader> : Stream-MaxBitrate: 1-266717 2-1171331
+<ASF reader> : Creating seek data, please wait...
+<ASF reader> : Seek data created ( processed 514 packets )
+<ASF reader> : Interleave info: blocksize=1  packetlen=10923  chunklen=10923
+<reader> : Initialized audio stream (chunk tblsz: 93, fmtsz: 36)
+<reader> : Initialized video stream (chunk tblsz: 745, fmtsz: 44)
+<LDT keeper> : Installed fs segment: 0x40034000
+<codec keeper> : Found 9 plugins (/usr/local/lib/avifile0.7,A:29,V:71)
+<BitmapInfo> : BitmapInfo, format: 
+<BitmapInfo> :   biSize 44 ( 640 x 352 x 24b ) 861293911 bytes
+<BitmapInfo> :   biPlanes 1,  biCompression 0x33564d57='WMV3'
+<BitmapInfo> :   colors:  0x18f14d  0x80ccc24  0x0004
+<Win32 plugin> : External func OLEAUT32.dll:8
+IMediaObject created: 0x80c8fc8
+SetInput: r=0x0
+SetOutput r=0x0
+GetOutput r=0x0   size:337920  align:1
+StreamCount r=0x0  1  1
+<Win32 DS video decoder> : opened dll: wmvdmod.dll
+<codec keeper> : Windows Media Video DMO video decoder created
+<renderer> : Input iso-8859-1, output iso-8859-1
+<renderer> : SDL video driver: x11
+<renderer> : created surface: 640x352 32 bits
+<aviplay> : !!!Running video decoder as ROOT - Dangerous!!!
+<audio reader> : Failed to initialize audio decoder for format 0x162
+<video reader> : w:640 h:-352   bpp:12 0x32315659 -  1:1 (0x80ccc38)
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 16)
+ProcessOutputError: r:0x80004005=-2147467259  1073907641  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 16)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 16)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 16)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ AudioInfo - unknown? (0x162) 48000Hz 24b  Channels: 6  Sample Size: 1
+  Time length: 30.68  Size: 1015839 bytes (992.03KB)
+  Frames: 93    Bps: 264.91 kbps (32.34KB/s)
+  Min/avg/max/total frame size: 10923/10923/10923 (992.03KB) in 93 frames
+ VideoInfo - WMV3 (0x33564d57)  640x352  Fps: 21.939  Quality: 0
+  Time length: 33.96  Size: 4108650 bytes (4012.35KB)
+  Frames: 745    Bps: 967.94 kbps (118.16KB/s)
+  Key frames/size 6.71% (12.53%)  delta frames/size 87.47%
+  Min/avg/max/total key frame size: 1107/10297/23492 (502.80KB) in 50 frames
+  Min/avg/max/total delta frame size: 16/5170/11270 (3509.55KB) in 695 frames
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 16)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 16)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 16)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 16)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 16)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 16)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 16)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+ProcessInputError  r:0x80004005=-2147467259 (keyframe: 0)
+ProcessOutputError: r:0x80004005=-2147467259  1080810349  stat:0
+swap  Windows Media Video DMO  Windows Media Video 9 DMO
+ idx1 0   idx2 1
+swap  Windows Media Video 9 DMO  Windows Media Video DMO
+ idx1 0   idx2 1
+swap  Windows Media Video DMO  Windows Media Video 9 DMO
+ idx1 0   idx2 1
+<renderer> : Loading font: "-adobe-helvetica-medium-r-normal--20-140-100-100-p-100-iso10646-1"
+<renderer> : XftFont Not Match
+<renderer> : Missing charsets in FontSet(-adobe-helvetica-medium-r-normal--20-140-100-100-p-100-iso10646-1) creation.
+<renderer> : Failed to open X11 font
+SETFONT -adobe-helvetica-medium-r-normal--20-140-100-100-p-100-iso10646-1
+<Win32 plugin> : Total Unfree 10184 bytes cnt 12 [(nil),0]
+<BitmapInfo> : BitmapInfo, format: 
+<BitmapInfo> :   biSize 44 ( 640 x 352 x 24b ) 861293911 bytes
+<BitmapInfo> :   biPlanes 1,  biCompression 0x33564d57='WMV3'
+<BitmapInfo> :   colors:  0x18f14d  0x65727462  0x74622c65
+<Win32 plugin> : External func OLEAUT32.dll:8
+IMediaObject created: 0x41014368
+SetInput: r=0x0
+SetOutput r=0x0
+GetOutput r=0x0   size:337920  align:1
+StreamCount r=0x0  1  1
+<Win32 DS video decoder> : opened dll: wmv9dmod.dll
+<codec keeper> : Windows Media Video 9 DMO video decoder created
+<audio reader> : Failed to initialize audio decoder for format 0x162
+<video reader> : w:640 h:-352   bpp:12 0x32315659 -  1:1 (0x80d8668)
+<aviplay> : Video stream eof
+<Win32 plugin> : Total Unfree 3640013 bytes cnt 299 [(nil),0]
+<aviplay> : Closing clip
+<aviplay> : Played 991 video frames ( 0.000000% drop )

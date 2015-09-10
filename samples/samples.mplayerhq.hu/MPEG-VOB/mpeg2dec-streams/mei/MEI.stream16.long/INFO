@@ -1,0 +1,21 @@
+Only minor problems found with this bitstream.
+
+---------------------------------------------------------------
+
+This is to confirm that I have received your tape with 
+the "long" versions of MEI.stream16 and MEI.stream17.
+
+I have checked MEI.stream16.long, and the only problem that
+I found is a couple of frames where I get a vbv_delay mismatch.
+
+I have included the vbv trace file (search for the word "warning").
+
+Note: in the vbv trace file included, the  value of Buffer_fullness
+(before removing any headers) is known to be sometimes incorrect,
+due to a bug in my trace program.  This does not affect the other
+Buffer_fullness values.
+
+Regards,
+
+--Tristan (tristan@la.tce.com)
+

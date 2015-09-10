@@ -1,0 +1,60 @@
+No problem found.
+
+Note: The encoder that was used to produce this bitstream did not implement
+the recommendation expressed in Note 2 of section 7.4.4.
+
+------------------------------------------------------------------------
+
+I have checked tcela-7.bits again, and interestingly enough, I also
+have some mismatch when I compare with the reconstructed frames
+tcela-7.recon !
+
+$ cmp -l tcela-7.decoded tcela-7.decoded.new
+
+6015340 106 107
+6016777 156 157
+6023978 204 205
+8878374 255 256
+8879812 256 257
+16225302 354 355
+16228180 353 354
+23853057 100  77
+23853784  55  54
+23855940  46  45
+23857379  43  42
+29439754 171 172
+29958152 172 173
+29958505 160 161
+29960306 164 165
+30476551 174 175
+30476903 162 163
+30994949 174 175
+
+Those mismatch are only +-1 (this is octal), but I cannot explain them, since
+I made this bitstream with the same encoder (rather with an earlier version of...).
+
+ 
+Note:
+
+The encoder that was used to make this
+bitstream did not follow the recommendation in Note-2, section 7.4.4.
+
+In some cases (like when a fixed frame is encoded), a bitstream
+containing some non-zero blocks of coefficients that reconstruct to
+zero when a double-precision IDCT is used may cause very significant
+drift when decoded by some decoders using an IDCT that reconstruct
+non-zero blocks for those blocks.
+
+An example of such bitstream is tcela-12 (see tcela-12.README).
+
+This problem was discussed by John Morris some time ago.
+
+Well-designed encoders should check the output of their IDCT for each
+8x8 block in P-Pictures and if it is zero, should clear all DCT
+coefficient of this block before generating the bits.  The check only
+needs to be done for P-Pictures to avoid this drift problem.
+
+Regards,
+
+--Tristan (tristan@la.tce.com)
+

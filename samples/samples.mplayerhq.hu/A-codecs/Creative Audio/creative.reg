@@ -1,0 +1,5 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Drivers32]
+"msacm.ctadp32"="ctadp32.acm"
+"msacm.ctfs32"="ctfs32.acm"

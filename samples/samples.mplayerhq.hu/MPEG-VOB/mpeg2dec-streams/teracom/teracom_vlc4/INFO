@@ -1,0 +1,39 @@
+No problem found.
+--------------------------------------------------------
+From tristan Mon May 22 10:43:52 1995
+To: hab@fou.svrr.se
+Subject: Re: teracom_vlc4
+Cc: confadhoc
+
+Dear Harald,
+Dear Video Conformance AHG members,
+
+This is a (late - sorry) report to confirm that I have been able
+to decode successfully your bitstream video conformance test
+bitstream teracom_vlc4 (this bitstream replaces teracom_vlc3).
+
+I have observed a perfect match except for ONE pel with a mismatch
+of +/- 1:
+
+$ cmp -l my_reconstructed teracom_vlc4.tosh
+32439007  76  75
+^          ^   ^
+|          |   |
+|          differing bytes (octal)
+|
+byte number (decimal)
+
+Interestingly enough, I find this very same mismatch pel with both our
+proprietary software decoder and the technical report verifier.  If you
+have time, you should confirm that this is caused by a genuine IDCT
+mismatch.
+
+It should be noted that tcela-17 is somehow redundent with
+teracom_vlc4, since teracom_vlc4 also tests large motion vectors.
+However tcela-17 provides an immediate visual checking for correct
+implementation of large motion vectors.
+
+Regards,
+
+--Tristan (tristan@la.tce.com)
+

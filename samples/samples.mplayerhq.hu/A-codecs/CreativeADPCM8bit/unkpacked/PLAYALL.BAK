@@ -1,0 +1,46 @@
+@echo off
+cls
+REM Samples submitted by trixter@oldskool.org (Jim Leonard), contact me
+REM for additional details if necessary.
+
+echo All of these files were created by the VEDIT2.EXE program, which
+echo unfortunatly requires EGA, a mouse, and most importantly a very specific
+echo revision of Sound Blaster called a Sound Blaster Pro rev 2 board.  The
+echo version of software provided here is hard-coded to IRQ 2, port 220h, and
+echo DMA 1, for those attempting to get it running under emulation.  The Sound
+echo Blaster Pro DSP revision I unfortunately don't remember, so you'll have to
+echo patch the program to just bypass that check and hope it doesn't crash.
+echo
+echo The compression scheme was called "Creative ADPCM" back in the late
+echo 1980s/early 1990s, and the 8-bit scheme has, to my knowledge, never been
+echo reverse-engineered.  (The 16-bit scheme has.)  ADPCM samples can be played
+echo back in hardware by the DSP without any CPU usage, but creating them
+echo remains a mystery.  The samples provided have a rate of 11025Hz, because
+echo the Sound Blaster series of cards' DSPs were only fast enough to play back
+echo compressed samples at a rate of 12KHz, no more.  (You can create 22KHz
+echo compressed samples but they will play back at 12KHz.)
+echo
+echo If anyone reverse-engineers the scheme, PLEASE let me know as I am very
+echo interested in 8-bit PCM compression schemes and have always wondered how
+echo this one works.  BTW, yes, the 2-bit ("4:1") scheme sounds pretty bad :)
+
+echo To play all of the sound samples,
+pause
+
+echo Playing Taxiride sample, 8-bit unsigned PCM (uncompressed)
+vplay TAXI8BIT.VOC
+echo Playing Taxiride sample, 4-bit ("2:1") compressed
+vplay TAXI4BIT.VOC
+echo Playing Taxiride sample, 3-bit ("3:1") compressed
+vplay TAXI3BIT.VOC
+echo Playing Taxiride sample, 2-bit ("4:1") compressed
+vplay TAXI2BIT.VOC
+
+echo Playing BBC sample, 8-bit unsigned PCM (uncompressed)
+vplay BBC_8BIT.VOC
+echo Playing BBC sample, 4-bit ("2:1") compressed
+vplay BBC_2BIT.VOC
+echo Playing BBC sample, 3-bit ("3:1") compressed
+vplay BBC_3BIT.VOC
+echo Playing BBC sample, 2-bit ("4:1") compressed
+vplay BBC_4BIT.VOC

@@ -1,0 +1,181 @@
+InitialObjectDescriptor {
+ objectDescriptorID 1
+ audioProfileLevelIndication 5
+ visualProfileLevelIndication 245
+ sceneProfileLevelIndication 1
+ graphicsProfileLevelIndication 254
+ ODProfileLevelIndication 254
+ esDescr [
+  ES_Descriptor {
+   ES_ID 1
+   decConfigDescr DecoderConfigDescriptor {
+    objectTypeIndication 1
+    streamType 1
+    bufferSizeDB 40
+    maxBitrate 320
+    avgBitrate 320
+   }
+   slConfigDescr SLConfigDescriptor {
+    useAccessUnitStartFlag true
+    useAccessUnitEndFlag true
+    useTimeStampsFlag true
+    timeStampResolution 1000
+    timeStampLength 32
+   }
+  }
+  ES_Descriptor {
+   ES_ID 2
+   OCR_ES_ID 1
+   decConfigDescr DecoderConfigDescriptor {
+    objectTypeIndication 1
+    streamType 3
+    bufferSizeDB 36
+    maxBitrate 288
+    avgBitrate 288
+    decSpecificInfo BIFSConfig {
+     nodeIDbits 10
+     routeIDbits 10
+     isCommandStream true
+     pixelMetric true
+     pixelWidth 720
+     pixelHeight 304
+    }
+   }
+   slConfigDescr SLConfigDescriptor {
+    useAccessUnitStartFlag true
+    useAccessUnitEndFlag true
+    useTimeStampsFlag true
+    timeStampResolution 1000
+    timeStampLength 32
+   }
+  }
+ ]
+}
+
+OrderedGroup {
+ children [
+  Shape {
+   appearance Appearance {
+    texture MovieTexture {
+     url [od:10]
+    }
+   }
+   geometry Bitmap {
+    scale 1 1
+   }
+  }
+  Switch {
+   whichChoice 0
+   choice [
+    Sound2D {
+     source AudioClip {
+      url [od:20]
+     }
+    }
+    Sound2D {
+     source AudioClip {
+      url [od:20]
+     }
+    }
+   ]
+  }
+ ]
+}
+
+
+RAP AT 0 {
+  UPDATE OD [
+   ObjectDescriptor {
+    objectDescriptorID 10
+    esDescr [
+     ES_Descriptor {
+      ES_ID 3
+      OCR_ES_ID 1
+      decConfigDescr DecoderConfigDescriptor {
+       objectTypeIndication 32
+       streamType 4
+       bufferSizeDB 60213
+       maxBitrate 3449456
+       avgBitrate 1960559
+       decSpecificInfo DecoderSpecificInfo {
+        info %00%00%01%B0%F5%00%00%01%B5%09%00%00%01%00%00%00%01%20%08%D4%8D%40%00%49%A9%40%4B%C0%03%8E%A3%96%1A%8C%1F%44%5A%10%98%50%E0%00%00%01%B2%65%6D%34%76%20%34%2E%31%2E%36%2E%35%00%C2%FF
+       }
+      }
+      slConfigDescr SLConfigDescriptor {
+       useAccessUnitStartFlag true
+       useAccessUnitEndFlag true
+       useRandomAccessPointFlag true
+       useTimeStampsFlag true
+       timeStampResolution 25000
+       timeStampLength 32
+      }
+      muxInfo MuxInfo {
+       fileName "NeroRecodeSample.mp4#3"
+       streamFormat "MP4"
+      }
+     }
+    ]
+   }
+   ObjectDescriptor {
+    objectDescriptorID 20
+    esDescr [
+     ES_Descriptor {
+      ES_ID 4
+      OCR_ES_ID 1
+      decConfigDescr DecoderConfigDescriptor {
+       objectTypeIndication 64
+       streamType 5
+       bufferSizeDB 2403
+       maxBitrate 226840
+       avgBitrate 191242
+       decSpecificInfo DecoderSpecificInfo {
+        info %13%30%56%E5%98
+       }
+      }
+      slConfigDescr SLConfigDescriptor {
+       useAccessUnitStartFlag true
+       useAccessUnitEndFlag true
+       useTimeStampsFlag true
+       timeStampResolution 24000
+       timeStampLength 32
+      }
+      muxInfo MuxInfo {
+       fileName "NeroRecodeSample.mp4#4"
+       streamFormat "MP4"
+      }
+     }
+    ]
+   }
+   ObjectDescriptor {
+    objectDescriptorID 20
+    esDescr [
+     ES_Descriptor {
+      ES_ID 4
+      OCR_ES_ID 1
+      decConfigDescr DecoderConfigDescriptor {
+       objectTypeIndication 64
+       streamType 5
+       bufferSizeDB 2403
+       maxBitrate 226840
+       avgBitrate 191242
+       decSpecificInfo DecoderSpecificInfo {
+        info %13%30%56%E5%98
+       }
+      }
+      slConfigDescr SLConfigDescriptor {
+       useAccessUnitStartFlag true
+       useAccessUnitEndFlag true
+       useTimeStampsFlag true
+       timeStampResolution 24000
+       timeStampLength 32
+      }
+      muxInfo MuxInfo {
+       fileName "NeroRecodeSample.mp4#4"
+       streamFormat "MP4"
+      }
+     }
+    ]
+   }
+  ]
+}
+

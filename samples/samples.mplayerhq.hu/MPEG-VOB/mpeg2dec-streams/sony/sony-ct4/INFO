@@ -1,0 +1,42 @@
+No problem found.
+
+Note: I suspect that the encoder used to produce this bitstream did not
+implement the recommendation expressed in Note 2 of section 7.4.4.
+
+-------------------------------------------------------------
+
+From tristan  Wed Oct 26 11:54:09 1994
+To: tahara@av.crl.sony.co.jp, mkato@av.crl.sony.co.jp
+Subject: sony-ct4
+Cc: confadhoc@la.tce.com
+
+Dear Katsumi and Motoki,
+
+This is to confirm that I receive your tape with your
+conformance bitstream sony-ct4.
+
+I have checked it, and I found no problem.
+
+I get an almost perfect match (10 pels with +-1 mismatch on a total of
+31104000 pels).
+
+For your information:
+
+cmp -l my_pict ../sony-ct4.pict
+4481579  42  43
+4485898  42  43
+4491662  42  43
+28852374  41  42
+28853093  42  43
+28857409  42  43
+30408279  41  42
+30409719  41  42
+30925959  41  42
+30930994  41  42
+
+(note: the last two numbers are in octal)
+
+Regards,
+
+--Tristan (tristan@la.tce.com)
+

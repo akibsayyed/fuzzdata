@@ -1,0 +1,35 @@
+From tristan Mon Oct 24 16:41:33 1994
+To: mkato@av.crl.sony.co.jp, tahara@av.crl.sony.co.jp
+Subject: Re: sony-ct3
+Cc: confadhoc@la.tce.com
+
+Dear Video Conformance Testing AHG members,
+
+I have checked the bitstream sony-ct3, and I found it correct.  I get a
+perfect match with the reconstructed frames.
+
+However, I noticed that the encoder that was used to make this
+bitstream does not follow the recommendation in Note-2, section 7.4.4.
+My decoder now checks this point (this is not currently a conformance
+point, but a recommendation).
+
+In some cases (like when a fixed frame is encoded), a bitstream
+containing some non-zero blocks of coefficients that reconstruct to
+zero when a double-precision IDCT is used may cause very significant
+drift when decoded by some decoders using an IDCT that reconstruct
+non-zero blocks for those blocks.
+
+An example of such bitstream is tcela-12 (see tcela-12.README).
+
+This problem was discussed by John Morris some time ago.
+
+Well-designed encoders should check the output of their IDCT for each
+8x8 block in P-Pictures and if it is zero, should clear all DCT
+coefficient of this block before generating the bits.  The check only
+needs to be done for P-Pictures to avoid this drift problem.
+
+
+Regards,
+
+--Tristan (tristan@la.tce.com)
+

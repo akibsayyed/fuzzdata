@@ -1,0 +1,3 @@
+This is a sample file that I have not been able to decode, despite an attempt to get Ffmpeg to link against a test libamr-wb+ library that I compiled. The error I get infinitely is:
+Multiple frames in a packet from stream 0
+my output file keeps growing despite this, presumably with null bytes.

@@ -1,0 +1,62 @@
+From tristan Mon Jun 19 12:58:57 1995
+To: madec@ccett.fr, cfogg@chromatic.com
+Subject: Re: mcp10ccett
+Cc: confadhoc
+
+Dear Gerard and Video Conformance AHG Members,
+
+I checked the mcp10ccett bitstream, and I got a perfect match with the
+reconstructed frames.
+
+However my decoder found that the vbv_delay values encoded are
+wrong.
+
+I have enclosed a trace of the vbv_values showing the problem.
+
+Also the associated 'README' file (mcp10ccett.doc) is virtually non-existent.
+Gerard, could you please provide a detailed README file with your bitstreams.
+You can look at the README files given with other conformance
+bitstreams if you need a model.
+
+
+Regards,
+
+--Tristan (tristan@la.tce.com)
+
+############################################## Decoding...
+frame index: 0
+Buffer_fullness (before removing any headers): 164405.33 bits
+Buffer_fullness (after removing picture start-code): 164133.33 bits
+Buffer_fullness (after removing picture data): -42.67 bits
+warning: VBV underflow violation: Buffer_fullness = -42.67 bits, should be >= 0.
+Buffer_fullness (after adding next incoming bits): 159957.33 bits
+############################################## Decoding...
+frame index: 3
+Buffer_fullness (before removing any headers): 159957.33 bits
+Buffer_fullness (after removing picture start-code): 159925.33 bits
+warning: vbv_delay = 3592, VBV says that it should be 3599 or 5399
+Buffer_fullness (after removing picture data): 79957.33 bits
+Buffer_fullness (after adding next incoming bits): 239957.33 bits
+############################################## Decoding...
+frame index: 1
+Buffer_fullness (before removing any headers): 239957.33 bits
+Buffer_fullness (after removing picture start-code): 239925.33 bits
+warning: vbv_delay = 3592, VBV says that it should be 5399
+Buffer_fullness (after removing picture data): 79957.33 bits
+Buffer_fullness (after adding next incoming bits): 239957.33 bits
+############################################## Decoding...
+frame index: 2
+Buffer_fullness (before removing any headers): 239957.33 bits
+Buffer_fullness (after removing picture start-code): 239925.33 bits
+warning: vbv_delay = 4581, VBV says that it should be 5399
+Buffer_fullness (after removing picture data): 79957.33 bits
+Buffer_fullness (after adding next incoming bits): 239957.33 bits
+############################################## Decoding...
+
+----------------------------------------------------------------------------------
+
+The mcp10ccett bitstream does not test all cases and all situations.
+A similar test should be extended to field-pictures and should include
+all possible types of prediction modes, including Dual prime and 16x8 field.
+
+--Tristan
